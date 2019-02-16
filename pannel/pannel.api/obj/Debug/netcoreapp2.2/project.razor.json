@@ -1,0 +1,14 @@
+{
+  "ProjectFilePath": "/home/drew/git/github/registration/pannel/pannel.api/pannel.api.csproj",
+  "TargetFramework": "netcoreapp2.2",
+  "TagHelpers": [],
+  "Configuration": {
+    "ConfigurationName": "MVC-2.1",
+    "LanguageVersion": "2.1",
+    "Extensions": [
+      {
+        "ExtensionName": "MVC-2.1"
+      }
+    ]
+  }
+}
