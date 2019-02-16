@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using pannel.api.Models;
 
@@ -19,9 +20,9 @@ namespace pannel.api.Controllers
 
         }
         [HttpGet]
-        public ActionResult<IEnumerable<PannelListEntry>> list()
+      async  public Task<IActionResult> list()
         {
-            return _pannels;
+            return  Ok(_pannels);
         }
     }
 }
