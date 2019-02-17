@@ -9,7 +9,12 @@
                 "build",
                 "${workspaceFolder}/pannel.api/pannel.api.csproj"
             ],
-            "problemMatcher": "$msCompile"
+            "problemMatcher": "$msCompile",
+            "group": {
+                "isDefault": true,
+                "kind": "build"
+            }
+
         }
     ]
 }
