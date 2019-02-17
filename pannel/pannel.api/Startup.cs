@@ -28,8 +28,8 @@ namespace pannel.api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-                                    // Register the Swagger services
-            services.AddSwaggerDocument(config =>
+            // Register the Swagger services
+            services.AddOpenApiDocument(config =>
             {
                 config.PostProcess = document =>
                 {
@@ -37,7 +37,7 @@ namespace pannel.api
                     document.Info.Title = "Pannels micro service API";
                     document.Info.Description = "A micoroservice to deal with pannels";
                     document.Info.TermsOfService = "None";
-                
+
                 };
             });
         }
@@ -55,11 +55,11 @@ namespace pannel.api
                 app.UseHsts();
             }
 
-  // Register the Swagger generator and the Swagger UI middlewares
-    app.UseSwagger();
-    app.UseSwaggerUi3();
+            // Register the Swagger generator and the Swagger UI middlewares
+            app.UseSwagger();
+            app.UseSwaggerUi3();
 
-            app.UseHttpsRedirection();
+            // app.UseHttpsRedirection();
             app.UseMvc();
 
 
