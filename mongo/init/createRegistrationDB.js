@@ -11,7 +11,8 @@ db.createUser(
 db.createUser(
     {
       user: "regService",
-      pwd: "r3g1S3rvice",
-      roles: [ { role: "readWrite", db: "registration" }]
+      pwd: "r3gS3rv!c3",
+      roles: [ { role: "readWrite", db: "registrationDb" }]
     }
   );
+
