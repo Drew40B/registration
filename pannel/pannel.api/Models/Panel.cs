@@ -13,5 +13,7 @@ namespace pannel.api.Models
         public string shortDescriptiom { get; set; }
 
         public string longDescription { get; set; }
+
+        public int capacity { get; set; }
     }
 }

@@ -22,20 +22,22 @@ namespace pannel.api.Controllers
             {
                 pannelId = 1,
                 title = "Pannel-ology",
-                shortDescriptiom = "Disuccion on why pannels are so important",
+                shortDescriptiom = "Discussion on why pannels are so important",
                 longDescription = "Some realy long description on the advent of the study of panels",
                 startDateTime = new DateTime(DateTime.Now.Year, 01, 20, 9, 0, 0),
-                endDateTime = new DateTime(DateTime.Now.Year, 01, 20, 10, 0, 0)
+                endDateTime = new DateTime(DateTime.Now.Year, 01, 20, 10, 0, 0),
+                capacity = 10
             });
 
             _pannels.Add(new Panel()
             {
                 pannelId = 2,
                 title = "Pannel-ology 2",
-                shortDescriptiom = "Continuation of disuccion on why pannels are so important",
+                shortDescriptiom = "Continuation of discussion on why pannels are so important",
                 longDescription = "Some realy long description on the advent of the study of panels",
                 startDateTime = new DateTime(DateTime.Now.Year, 01, 20, 10, 0, 0),
-                endDateTime = new DateTime(DateTime.Now.Year, 01, 20, 11, 0, 0)
+                endDateTime = new DateTime(DateTime.Now.Year, 01, 20, 11, 0, 0),
+                capacity = 10
             });
 
 
