@@ -22,7 +22,6 @@ namespace participants.api.Services
 
         public async Task<List<Participant>> List()
         {
-
             var result = await _participants.FindAsync(participant => true);
             return result.ToList();
         }

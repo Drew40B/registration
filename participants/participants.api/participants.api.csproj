@@ -17,4 +17,7 @@
     <PackageReference Include="NSwag.AspNetCore" Version="12.0.14" />
   </ItemGroup>
 
+ <Target Name = "CopyFiles" AfterTargets="build">
+    <Copy DestinationFolder="$(OutputPath)" SourceFiles="appsettings.json" SkipUnchangedFiles = "false" />
+  </Target>
 </Project>
