@@ -1,0 +1,9 @@
+version: "3"
+services:
+  registration_db:
+    container_name: registration_db   
+    build: ./mongo
+    image: registration_db:latest
+    ports:
+      - "27017:27017"
+   

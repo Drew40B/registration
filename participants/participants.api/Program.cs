@@ -14,7 +14,14 @@ namespace participants.api
     {
         public static void Main(string[] args)
         {
-            CreateWebHostBuilder(args).Build().Run();
+            var config = new ConfigurationBuilder()
+             .SetBasePath(AppContext.BaseDirectory)
+             .AddJsonFile("appsettings.json", true)
+             .AddEnvironmentVariables("ASPNETCORE_")
+             .AddCommandLine(args)
+             .Build();
+
+            CreateWebHostBuilder(args).UseConfiguration(config).Build().Run();
         }
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
